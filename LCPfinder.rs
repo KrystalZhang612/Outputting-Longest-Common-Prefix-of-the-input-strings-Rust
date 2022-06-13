@@ -13,7 +13,6 @@ fn find_the_longest_common_prefix_amongst_all(given_string_array: &[&[u8]]) -> O
         
     }
     
-    
     //create a new empty vector in mutable type 
     
     let mut vec = Vec::new();
@@ -80,10 +79,6 @@ fn find_the_longest_common_prefix_amongst_all(given_string_array: &[&[u8]]) -> O
     
 }
 
-
-
-
-
 //driver 
 
 fn main() {
@@ -95,8 +90,7 @@ fn main() {
     
     strs.iter().for_each(|given_string_array| match find_the_longest_common_prefix_amongst_all(given_string_array) {
         
-        
-        
+      
         Some(LCP_result) => println!("{}", String::from_utf8_lossy(&LCP_result)),
         
         
